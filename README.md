@@ -1,2 +1,2 @@
 # covid-charts
-Displaying COVID data in the browser using charts.js - Data from Our World in Data
+Displaying COVID data in the browser using charts.js - Data from OWID - Our World in Data
