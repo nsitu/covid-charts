@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COVID-19 Charts</title>
+	<link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- see also: https://www.chartjs.org/ -->
+  <script src="http://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="covid.js"></script>
+</head>
+<body>
+<div id="header" style="text-align: center; padding: 10px;">
+  <h2>COVID-19 <span>in</span></h2>
+  <select id="theCountries" onchange="loadCountry();">
+    <!-- Options are populated by JavaScript  -->
+  </select>
+</div>
+<section>
+  <canvas id="myChart" width="400" height="160"></canvas>
+</section>
+<footer> Created by <a href="https://nsitu.ca">Harold Sikkema</a>. 
+Data provided by <a href="https://ourworldindata.org/coronavirus-source-data">Our World In Data</a> / <a href="https://www.ecdc.europa.eu/en/coronavirus">ECDC</a>. Charts made with <a href="https://www.chartjs.org/">Chart.js</a> Case doubling time is given in days, and is based on a 5-day average.</footer>
+</body>
+</html>
