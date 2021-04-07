@@ -110,7 +110,7 @@ fetch("/Covid/"+theCountry)
           label: casesLabel,
           lineTension: 0,
           data: confirmedCases,
-          borderColor: 'red',
+          borderColor: 'orange',
           backgroundColor: 'transparent',
           showLine: true,
           yAxisID: 'first-y-axis',
@@ -127,7 +127,7 @@ fetch("/Covid/"+theCountry)
               type: 'logarithmic',
               position: 'right',
               ticks: {
-                  fontColor: 'red',
+                  fontColor: 'orange',
                   callback: function(tick, index, ticks) {
                     // use regular numbers, not scientific notation
                     return tick.toLocaleString();
@@ -135,7 +135,7 @@ fetch("/Covid/"+theCountry)
               },
               scaleLabel: {
                   display: true,
-                  fontColor: 'red',
+                  fontColor: 'orange',
                   labelString: casesLabel
               }
           },
